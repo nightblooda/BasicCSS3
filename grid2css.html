@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>grid2css</title>
+    <style type="text/css">
+    
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        [class*="col-"]{
+            padding: 20px;
+            float: left;
+        }
+
+        .col-1{
+            padding: 40px;
+            width: 100%;
+            text-align: center;
+            background-color:rebeccapurple;
+            color: white;
+        }
+
+        .col-2{
+            width: 25%;
+        }
+
+        .col-2 ul{
+            list-style-type: none;
+        }
+
+        .col-2 ul li{
+            padding: 7px;
+            color: white;
+            width: 100%;
+            background-color:royalblue;
+            margin-bottom: 5px;
+            font-size: 1.5em;
+        }
+
+        .col-2 ul li a{
+            text-decoration: none;
+            color: white;
+        }
+
+        .col-2 ul li:hover{
+            background-color:steelblue;
+        }
+
+        .col-3{
+            width: 50%;
+        }
+
+        .col-3 h1{
+            padding: 20px;
+        }
+
+        .col-3 p{
+            line-height: 2em;
+        }
+
+        .col-4>div{
+            background-color: royalblue;
+            color: white;
+            text-align: center;
+            padding: 20px;
+           
+        }
+        
+        .col-4 h3{
+            padding: 10px;
+        }
+
+        .col-4{
+            width: 25%;
+        }
+
+        .col-5{
+            width: 100%;
+            background-color: royalblue;
+            color: white;
+        }
+
+        body{
+            margin: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="col-1">
+        <h1>Chinia</h1>
+    </div>
+    <div class="col-2">
+        <ul>
+            <li><a href="">The Flight</a></li>
+            <li><a href="">The City</a></li>
+            <li><a href="">The Island</a></li>
+            <li><a href="">Food</a></li>
+        </ul>
+    </div>
+    <div class="col-3">
+        <h1>The City</h1>
+        <p>Chiania is the capital of the Chania region on the Island of Crete. The City can be divided in two parts, the old town and the modern city.</p>
+    </div>
+    <div class="col-4"><div>
+        <h3>What?</h3>
+        <p>Chania is a city on the island of Crete.</p>
+        <h3>Where?</h3>
+        <p>Crete is a Greek island on the Mediterranean Sea.</p>
+        <h3>How?</h3>
+        <p>You can reach Chania airport from all over Europe.</p></div>
+    </div>
+    <div class="col-5">
+        <p>Resize the browser window to see how the content respond to the resizing.</p>
+    </div>
+</body>
+</html>
