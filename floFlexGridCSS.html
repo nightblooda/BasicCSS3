@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>floflexgridcss.html</title>
+    <style type = "text/css">
+    
+        *{
+            box-sizing: border-box;
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        }
+
+        .header{
+            font-size: 30px;
+            text-align: center;
+            padding: 30px;
+            width: 100%;
+            background-color: #f2f2f2;
+        }
+
+        .column{
+            float: left;
+            height: 400px;
+            width: 33.33%;
+            padding: 20px;
+        }
+
+        .footer{
+            clear: left;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.3em;
+            width: 100%;
+            background-color: #333;
+        }
+
+        @media (max-width: 600px){
+            .column{
+                width: 100%;
+            }
+        }
+
+        /**{
+            box-sizing: border-box;
+            font-family: "Trbuchet MS", Arial, Helvetica, sans-serif;
+        }
+
+        .header{
+            padding: 30px;
+            font-size: 30px;
+            text-align: center;
+            width: 100%;
+            background-color: #f2f2f2;
+        }
+
+        .container{
+            display: flex;
+        }
+        .column{
+            padding: 20px;
+            flex: 1;
+            height: 400px;
+        }
+
+        .footer{
+            padding: 20px;
+            text-align: center;
+            font-size: 1.3em;
+            background-color: #666;
+        }
+
+        @media(max-width: 600px){
+            .container{
+                flex-direction: column;
+            }
+        }*/
+
+        /**{
+            box-sizing: border-box;
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        }
+
+        .header{
+            padding: 30px;
+            font-size: 30px;
+            text-align: center;
+            background-color: #f2f2f2;
+            grid-area: header;
+        }
+
+        .container{
+            display: grid;
+            grid-template-areas: 'header header header header header header'
+            'left left middle middle right right'
+            'footer footer footer footer footer footer'
+        }
+
+        .column{
+            padding: 20px;
+            height: 400px;
+        }
+
+        .right{
+            grid-area: right;
+        }
+
+        .left{
+            grid-area: left;
+        }
+
+        .middle{
+            grid-area: middle;
+        }
+
+        .footer{
+            grid-area: footer;
+            text-align: center;
+            padding: 20px;
+            background-color: #666;
+        }
+
+        @media(max-width: 600px){
+            .container{
+                grid-template-areas: 'header header header header header header'
+                'left left left left left left'
+                'right right right right right right'
+                'middle middle middle middle middle middle'
+                'footer footer footer footer footer footer'
+            }
+        }*/
+    </style>
+</head>
+<body>
+    
+    <h1>CSS Template using Float Flexbox and Grid</h1>
+    <p>In this example, we have created a heaser, three eqyal columns and a footer. On smaller screens, the columns will stack on top of each other.</p>
+    <p>Resize the browser window to see the responsive effect.</p>
+    <div class="container">
+    <div class="header">Header</div>
+        <div class="column left" style="background-color: #f9f9f9;">Column</div>
+        <div class="column middle" style="background-color: #444;">Column</div>
+        <div class="column right" style="background-color: #555;">Column</div>
+    <div class="footer">Footer</div></div>
+
+</body>
+</html>
